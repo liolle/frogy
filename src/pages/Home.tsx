@@ -3,9 +3,9 @@ import {Player} from "@/player"
 import { Game } from "@/game";
 import { createEffect, onCleanup } from "solid-js";
 
-const SQUARE_SIZE = 32
-const BOARD_ROWS = 30;
-const BOARD_COLS = 40;
+const SQUARE_SIZE = 64
+const BOARD_ROWS = 13;
+const BOARD_COLS = 16;
 const BOARD_WIDTH = BOARD_COLS * SQUARE_SIZE
 const BOARD_HEIGHT = BOARD_ROWS * SQUARE_SIZE
 
@@ -18,7 +18,7 @@ const player_options:PlayerOptions = {
   id: "default",
   width:64,
   height:64,
-  size:2,
+  size:1,
   initial_position:{
     x:(BOARD_WIDTH)/2 -64 ,
     y:(BOARD_HEIGHT)/2 -64 
@@ -66,7 +66,7 @@ export const Home = ()=>{
 
   return (
     <div class="h-full flex justify-center items-center">
-      <canvas class=" p-1 border border-solid border-white" ref={canvas}></canvas>
+      <canvas class=" p-1 rounded-lg border border-solid border-white" ref={canvas}></canvas>
     </div>
   )
 }

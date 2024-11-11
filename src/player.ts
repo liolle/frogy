@@ -13,7 +13,7 @@ export class Player {
     x:0,
     y:0
   }
-  speed =  8
+  speed = 8 
   base_speed = 8
   v_up = 0
   v_down = 0
