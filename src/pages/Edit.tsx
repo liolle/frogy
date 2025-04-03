@@ -55,7 +55,8 @@ export const Edit = ()=>{
 }
 
 const Panel = ()=>{
-  const tyles = Array.from({length:100},()=>0)
+  let i = 0
+  const tyles = Array.from({length:100},(idx)=>i++)
   return (
     <div class=" flex flex-col gap-2 max-w-[444px] rounded-lg border border-solid justify-between border-white h-full w-full p-2 overflow-hidden">
       <div class=" flex flex-wrap items-start gap-2 justify-start overflow-y-scroll scrollbar-hidden" >

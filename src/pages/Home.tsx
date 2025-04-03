@@ -51,7 +51,7 @@ export const Home = ()=>{
 
     const game = new Game(context,game_options)
     const player = new Player(context,player_options)
-    
+
     game.addPlayer(player)
     game.launch()
 
@@ -59,7 +59,7 @@ export const Home = ()=>{
 
   onCleanup(() => {
     if(!game){
-        return
+      return
     }
     game.clear()
   });
